@@ -51,3 +51,17 @@
 #     Штраф: 5000 руб.
 
 # Решение
+can_speed = int(input("Разрешённая скорость, км/ч: "))
+fact_speed = int(input("Фактическая скорость, км/ч: "))
+mnogo_speed = fact_speed - can_speed
+
+if 0 <= mnogo_speed <= 20:
+    print("Штраф: 0 руб.")
+elif 21 <= mnogo_speed <= 40:
+    print("Штраф: 750 руб.")
+elif 41 <= mnogo_speed <= 60:
+    print("Штраф: 1500 руб.")
+elif 61 <= mnogo_speed <= 80:
+    print("Штраф: 2500 руб.")
+elif mnogo_speed > 80:
+    print("Штраф: 5000 руб.")

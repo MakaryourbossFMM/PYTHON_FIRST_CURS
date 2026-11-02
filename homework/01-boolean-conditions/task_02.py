@@ -30,3 +30,10 @@
 #     Полный билет: False
 
 # Решение
+year = int(input("Возраст: "))
+if year < 18 or year >= 65:
+    print("Льготный билет: True")
+    print("Полный билет: False")
+else:
+    print("Льготный билет: False")
+    print("Полный билет: True")

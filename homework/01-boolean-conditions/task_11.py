@@ -52,6 +52,7 @@
 cassa_1 = input("Касса 1 открыта (да/нет): ")
 cassa_2 = input("Касса 2 открыта (да/нет): ")
 cassa_3 = input("Касса 3 открыта (да/нет): ")
+
 if (cassa_1 == "да" and cassa_2 == "нет" and cassa_3 == "нет") or (cassa_1 == "нет" and cassa_2 == "да" and cassa_3 == "нет") or (cassa_1 == "нет" and cassa_2 == "нет" and cassa_3 == "да"):
     print(True)
 else:

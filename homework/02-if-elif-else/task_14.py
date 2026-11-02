@@ -60,3 +60,22 @@
 #     Ошибка ввода
 
 # Решение
+srok = input("Сдана в срок (да/нет): ")
+ball = int(input("Баллы: "))
+if ball < 0 or ball > 10:
+    print("Ошибка ввода")
+else:
+    if srok == "да":
+        if ball >= 9:
+            print("Оценка: 5")
+        elif ball >= 7:
+            print("Оценка: 4")
+        elif ball >= 5:
+            print("Оценка: 3")
+        else:
+            print("Работа не зачтена")
+    else:
+        if ball >= 5:
+            print("Оценка: 3")
+        else:
+            print("Работа не зачтена")

@@ -55,17 +55,21 @@ dolg = int(input("Долг по оплате, руб.: "))
 
 if posseshaemost >= 75:
     print("Посещаемость: True")
+
 else:
     print("Посещаемость: False")
 if lab_works >= 8:
     print("Лабораторные: True")
+
 else:
     print("Лабораторные: False")
 if dolg == 0:
     print("Нет долга: True")
+
 else:
     print("Нет долга: False")
 if posseshaemost >= 75 and lab_works >= 8 and dolg == 0:
     print("Допущен: True")
+    
 else:
     print("Допущен: False")

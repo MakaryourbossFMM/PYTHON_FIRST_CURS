@@ -29,6 +29,7 @@
 
 # Решение
 bottle_count = int(input("Количество бутылок: "))
+
 if bottle_count % 6 == 0 and bottle_count % 4 == 0:
     print("True")
 else:

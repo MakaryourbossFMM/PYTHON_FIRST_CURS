@@ -34,3 +34,11 @@
 #     Снизьте давление
 
 # Решение
+manometr = float(input("Давление, бар: "))
+
+if manometr < 2.2:
+    print("Подкачайте шины")
+elif manometr > 2.5:
+    print("Снизьте давление")
+else:
+    print("Давление в норме")

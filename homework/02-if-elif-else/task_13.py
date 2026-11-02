@@ -47,3 +47,16 @@
 #     Отпуск согласован
 
 # Решение
+months_worked = int(input("Отработано месяцев: "))
+chill_days = int(input("Дней отпуска: "))
+can_chill_days = (months_worked * 28) // 12
+
+if months_worked < 6:
+    print("Отпуск пока недоступен")
+else:
+    
+    print(f"Доступно дней: {can_chill_days}")
+    if chill_days <= can_chill_days:
+        print("Отпуск согласован")
+    else:
+        print(f"Не хватает дней: {chill_days - can_chill_days}")
